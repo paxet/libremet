@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Libremet</string>
+    <string name="action_new">Nueva</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_about">Acerca de</string>
+    <string name="title_activity_tabs">Predicción</string>
+    <!-- <string name="abrir_prediccion">Predicción</string> -->
+    <!-- <string name="actualizar">Actualizar</string> -->
+    <string name="espere">Espere</string>
+    <string name="descargando_prediccion">Descargando predicción, se mostrará en un momento</string>
+    <string name="prediccion_actual">Actual</string>
+    <string name="prediccion_3horas">3 Horas</string>
+    <string name="prediccion_14dias">14 Días</string>
+    <string name="texto_ejemplo_graphical_layout">Texto pruebas</string>
+    <string name="imagen_prediccion">Imagen meteorología</string>
+    <string name="tempmin">Mín</string>
+    <string name="tempmax">Máx</string>
+    <string name="presion">Presión</string>
+    <string name="humedad">Humedad</string>
+    <string name="viento">Viento</string>
+    <string name="contextual_titulo">Opciones</string>
+    <string name="contextual_ver">Mostrar predicción</string>
+    <string name="contextual_eliminar">Eliminar</string>
+    <string name="dialog_confirmacion_titulo">¿Estás seguro/a?</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="title_activity_search">Bucar población</string>
+    <string name="buscar_filtro">Introduce nombre</string>
+    <string name="buscar_imgbuscar">Buscar</string>
+    <string name="acercade_titulo">Acerca de&#8230;</string>
+    <string name="acercade_msg">App desarrollada por Javier Caballero bajo la \"Academic Free License v.3.0\"\n\nEl servicio OpenWeatherMap proporciona gratuitamente datos climatológicos y una API de predicciones adecuada para cualquier servicio cartográfico como aplicaciones web o de smartphones. La ideología está inspirada en OpenStreetMap y Wikipedia que proveen la información de manera libre, gratuita y disponible para todos. OpenWeatherMap ofrece gran variedad de datos meteorológicos como mapas con climatología actual, pronóstico semanal, viento, nubosidad, datos de estaciones meteorológicas y muchos otros. Los datos climatológicos se reciben de Servicios globales Meteorológicos y mas de 40 000 estaciones meteorológicas.\n\nIcono de la aplicación creado por Martz90\nhttp://www.iconarchive.com/show/circle-icons-by-martz90/weather-icon.html\nLicencia:\nCC Attribution-Noncommercial-No Derivate 3.0</string>
+
+</resources>

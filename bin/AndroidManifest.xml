@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.paxet.libremet"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.paxet.libremet.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.paxet.libremet.widgets.ConfiguracionWidgetMeteorologia" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.paxet.libremet.TabsActivity"
+            android:label="@string/title_activity_tabs"
+            android:parentActivityName="org.paxet.libremet.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.paxet.libremet.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.paxet.libremet.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="org.paxet.libremet.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.paxet.libremet.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.paxet.libremet.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="org.paxet.libremet.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.paxet.libremet.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.paxet.libremet.AcercaDeActivity"
+            android:label="@string/acercade_titulo" >
+        </activity>
+
+        <provider
+            android:name="org.paxet.libremet.db.PoblacionesProvider"
+            android:authorities="org.paxet.libremet.providers.poblacionesprovider"
+            android:exported="false" />
+
+        <receiver
+            android:name="org.paxet.libremet.widgets.WidgetMeteorologia"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.paxet.libremet.widgets.ACTUALIZAR_WIDGET_METEOROLOGIA" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_meteorologia_info" />
+        </receiver>
+        
+    </application>
+
+</manifest>

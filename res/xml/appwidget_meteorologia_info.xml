@@ -1,0 +1,12 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="110dp"
+    android:updatePeriodMillis="3600000"
+    android:initialLayout="@layout/widget"
+    android:resizeMode="horizontal|vertical"
+    android:label="@string/app_name"
+    android:previewImage="@drawable/preview_widget"
+    android:widgetCategory="home_screen|keyguard"
+    android:configure="org.paxet.libremet.widgets.ConfiguracionWidgetMeteorologia"
+    android:initialKeyguardLayout="@layout/widget">
+</appwidget-provider>
